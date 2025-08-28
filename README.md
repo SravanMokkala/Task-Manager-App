@@ -21,16 +21,6 @@ A modern, responsive web application for managing multiple task lists and tasks.
 - ✅ Data persists across browser sessions and reloads
 - ✅ Real-time updates without page refresh
 
-### User Interface (UI)
-- ✅ Modern, responsive design using Bootstrap 5
-- ✅ Intuitive interface for viewing and switching between task lists
-- ✅ Easy task management with modal dialogs
-- ✅ Progress tracking with visual progress bars
-- ✅ Toast notifications for user feedback
-- ✅ Mobile-friendly responsive design
-- ✅ Dark mode support
-- ✅ Accessibility features
-
 ## 🛠️ Technology Stack
 
 ### Backend
