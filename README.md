@@ -64,33 +64,19 @@ cd task_tracker_app
 # Then navigate to the task_tracker_app directory
 ```
 
-### 2. Create a Virtual Environment (Recommended)
-
-```bash
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-
-# On macOS/Linux:
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 python app.py
 ```
 
-### 5. Access the Application
+### 4. Access the Application
 
 Open your web browser and navigate to:
 ```
