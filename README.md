@@ -47,11 +47,11 @@ A modern, responsive web application for managing multiple task lists and tasks.
 
 ```bash
 # If using git
-git clone <repository-url>
-cd task_tracker_app
+git clone https://github.com/SravanMokkala/Task-Manager-App.git
+cd Task-Manager-App
 
-# Or download and extract the ZIP file
-# Then navigate to the task_tracker_app directory
+# Or download and extract the ZIP file from:
+# https://github.com/SravanMokkala/Task-Manager-App
 ```
 
 ### 2. Install Dependencies
