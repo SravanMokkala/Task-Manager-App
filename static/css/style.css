@@ -1,0 +1,472 @@
+/* Task Tracker Application - Custom Styles */
+
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Card Enhancements */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 12px 12px 0 0 !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Task List Sidebar */
+.task-list-item {
+    cursor: pointer;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.task-list-item:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+    transform: translateY(-2px);
+}
+
+.task-list-item.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.task-list-item.active .task-list-stats {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.task-list-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #212529;
+}
+
+.task-list-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.task-list-stats {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Selected task list styling */
+.task-list-item.active .task-list-name {
+    color: #ffffff;
+}
+
+.task-list-item.active .task-list-description {
+    color: #e0e0e0;
+}
+
+.task-list-item.active .task-list-stats {
+    color: #cccccc;
+}
+
+/* Task Items */
+.task-item {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.task-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.task-item.completed {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.task-item.completed .task-description {
+    color: #6c757d;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.task-description {
+    color: #e0e0e0;
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+}
+
+.task-meta {
+    font-size: 0.75rem;
+    color: #cccccc;
+}
+
+.task-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.task-item:hover .task-actions {
+    opacity: 1;
+}
+
+.task-action-btn {
+    padding: 4px 8px;
+    margin-left: 4px;
+    border: none;
+    background: none;
+    color: #6c757d;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.task-action-btn:hover {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.task-action-btn.edit:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.task-action-btn.delete:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Progress Bar */
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    margin-bottom: 16px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    border: none;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    border: none;
+}
+
+/* Modal Enhancements */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Toast Notifications */
+.toast {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toast-header {
+    border-bottom: 1px solid #e9ecef;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    color: #e0e0e0;
+}
+
+/* Empty state text in cards */
+.text-muted {
+    color: #b8b8b8 !important;
+}
+
+/* Specific styling for empty state messages */
+.text-center.text-muted {
+    color: #b8b8b8 !important;
+}
+
+.text-center.text-muted h4 {
+    color: #d0d0d0 !important;
+}
+
+.text-center.text-muted p {
+    color: #a0a0a0 !important;
+}
+
+.text-center.text-muted small {
+    color: #888888 !important;
+}
+
+/* Modal form styling - ensure form labels are readable */
+.modal .form-label {
+    color: #212529 !important;
+    font-weight: 500;
+}
+
+.modal .text-muted {
+    color: #6c757d !important;
+}
+
+/* Ensure modal content text is readable */
+.modal-content {
+    color: #212529;
+}
+
+.modal-content .form-control {
+    color: #ffffff !important;
+    background-color: #2d2d2d !important;
+    border-color: #404040 !important;
+}
+
+.modal-content .form-control:focus {
+    color: #ffffff !important;
+    background-color: #2d2d2d !important;
+    border-color: #007bff !important;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px;
+    }
+    
+    .task-actions {
+        position: static;
+        opacity: 1;
+        margin-top: 12px;
+        text-align: right;
+    }
+    
+    .task-item {
+        padding: 12px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+.form-control:focus,
+.form-check-input:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid #000;
+    }
+    
+    .task-item {
+        border: 2px solid #000;
+    }
+    
+    .btn {
+        border: 2px solid #000;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .card {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .card-header {
+        background: linear-gradient(135deg, #2d2d2d 0%, #404040 100%);
+        border-bottom-color: #404040;
+    }
+    
+    .task-item {
+        background-color: #2d2d2d;
+        border-color: #404040;
+    }
+    
+    .task-item:hover {
+        background-color: #404040;
+    }
+    
+    .form-control {
+        background-color: #2d2d2d;
+        border-color: #404040;
+        color: #ffffff;
+    }
+    
+    .form-control:focus {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+}
